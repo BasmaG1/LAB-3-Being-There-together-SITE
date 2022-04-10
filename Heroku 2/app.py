@@ -88,6 +88,6 @@ def check_all_messages(message):
     return long.unknown() if highest_prob_list[best_match] < 1 else best_match   
 
 if __name__ == "__main__":
-    app.run(debug = True)
-    #app.run()
+    #app.run(debug = True)
+    app.run()
 
