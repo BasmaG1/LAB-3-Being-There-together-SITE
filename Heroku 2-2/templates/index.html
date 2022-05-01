@@ -1,0 +1,52 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+<style>
+    body{
+        background-color: bisque;
+        background-image: url("bg.jpg");
+        background-size: cover;
+    
+    }
+    * {
+        font-family: cursive;
+       
+    }
+
+    div {
+        text-align: center;
+        margin-top: 10px;
+        
+        
+    }
+
+    h1 {
+        color: rgb(72, 28, 166);
+        font-size: 30pt;
+    }
+
+    p {
+        color: rgb(210, 45, 122);
+        font-size: 25pt;
+    }
+    input[type=text] {
+        font-size: 20pt;
+        Height:50px;
+    }
+    
+</style>
+<body>
+<div>
+    <h1>Welcome to my chatbox !</h1><br>
+    <form action="{ url_for('postit') }" method="post">
+     <label for="chatbox">Chat :</label><br>
+     <input type="text" id="chatbox" name="chatbox"><br>
+     <label for="chatbox"> Reply :</label><br>
+     <input type="text" id="replybox" name="replybox" value="REPLY" readonly><br>    
+     <input type="submit" value="Send Chat">
+    </form>
+
+    <br>
+    <p> </p>
+</div>
+</body>
